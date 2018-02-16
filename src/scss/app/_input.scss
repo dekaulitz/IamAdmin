@@ -1,0 +1,12 @@
+
+.input-default {
+  border-left: #337ab7 solid;
+}
+
+.input-error {
+  border-left: red solid;
+}
+
+.input-error::placeholder {
+  color: red !important;
+}

@@ -1,0 +1,33 @@
+.main-navigation {
+  background-color: #292961;
+  font-weight: 500;
+  font-size: 13px;
+  color: white;
+}
+
+a.nav-link {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.nav-item a.dropdown-item {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  padding: 8px 16px;
+  min-width: 150px;
+  color: #2e2e2e;
+}
+
+a.dropdown-item:hover {
+  background-color: #eee;
+}
+
+a.dropdown-item:active {
+  background-color: #eee;
+}
+
+.app-name {
+  font-size: 13px;
+  font-weight: 600;
+}

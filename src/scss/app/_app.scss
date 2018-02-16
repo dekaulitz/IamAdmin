@@ -1,0 +1,148 @@
+
+html {
+  font-size: 13px;
+  -webkit-tap-highlight-color: transparent;
+  font-family: sans-serif;
+  overflow-y: scroll;
+  color: #2e2e2e;
+}
+
+body {
+  background-color: whitesmoke;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.border {
+  border-radius: 5px;
+}
+
+.content {
+  min-height: 550px;
+}
+
+.dropdown-menu {
+  border-bottom: solid 3px;
+}
+
+.card {
+  border-top: #674d8f solid 2px;
+}
+
+.datepicker-dropdown {
+  border: solid 1px #e2e2e2;
+}
+
+.form-group > input[type='checkbox'] {
+  padding-left: 1.25rem;
+}
+
+button.toolbox {
+  padding: 0px;
+  background-color: transparent;
+}
+
+.btn {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.bg-light {
+  background-color: white !important;
+}
+
+.bg-aqua {
+  background-color: #00c0ef !important;
+}
+
+.bg-green {
+  background-color: #00a65a !important;
+}
+
+.bg-yellow {
+  background-color: #f39c12 !important;
+}
+
+.bg-red {
+  background-color: #dd4b39 !important;
+}
+
+.navbar-default {
+  background-color: white !important;
+  border-bottom: #674d8f solid 2px;
+}
+
+.center-logo {
+  display: block;
+  padding: 15px 20px;
+  font-weight: 700;
+  color: #990000;
+  text-align: center;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.add-space {
+  margin-top: 10px;
+}
+
+.add-space-left {
+  margin-left: 10px;
+}
+
+.add-space-right {
+  margin-right: 10px;
+}
+
+.add-space-bottom {
+  margin-bottom: 10px;
+}
+
+.check-with-select {
+  border: solid 1px #dee2e6;
+  border-radius: 5px;
+  height: auto;
+
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.table-cursor {
+  cursor: pointer;
+}
+
+.check-with-select > select {
+  border: none;
+}
+
+.check-with-select > select:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+
+@media (max-width: 991.98px) {
+  .bd-navbar .navbar-nav-scroll {
+    max-width: 100%;
+    height: 2.5rem;
+    margin-top: .25rem;
+    overflow: hidden;
+    font-size: .875rem;
+  }
+
+  .bd-navbar .navbar-nav-scroll .navbar-nav {
+    padding-bottom: 2rem;
+    /* overflow-x: auto; */
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+

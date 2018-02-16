@@ -1,0 +1,41 @@
+.notification-list {
+  padding: 0px !important;
+}
+
+.notification-list-header {
+  font-weight: 500;
+  padding: 10px;
+  border-bottom: solid 2px;
+  background-color: #292961;
+  color: white;
+}
+
+.notification-list-header a {
+  text-decoration: none;
+  color: #948e9c;
+}
+
+.notification-list-header a:hover {
+  text-decoration: none;
+  color: white;
+
+}
+
+.notification-list-body {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.notification-list-footer {
+  padding: 10px;
+
+}
+
+.notification {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px;
+}
+
+a.dropdown-item {
+
+}
