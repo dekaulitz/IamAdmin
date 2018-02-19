@@ -2,13 +2,9 @@ require('./common');
 import '../scss/stylesheet.scss'
 import moment from 'moment';
 
-var editor = $(".text-editor");
-if (editor !== null) {
-    CKEDITOR.replace('editor');
-}
-
-var date = $('.datepicker');
-
+let editor = $(".text-editor");
+editor.length !== 0 ? CKEDITOR.replace('editor') : "";
+let date = $('.datepicker');
 date.datepicker();
 date.val(() => {
     return moment().format("MM/DD/YYYY");

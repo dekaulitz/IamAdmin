@@ -12,12 +12,13 @@ const extractPlugin = new ExtractTextPlugin({
 module.exports = {
     entry: {
         vendor: './src/js/common.js',
-        app: './src/js/app.js',
+        chart: './src/js/vendor.chart.js',
+        dummygraphic: './src/js/dumy-graphic.js',
         page: './src/js/page.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: "[name].bundle.js"
+        filename: "js/[name].bundle.js"
     },
     module: {
         rules: [
@@ -72,10 +73,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new Webpack.optimize.CommonsChunkPlugin({
-            name: "vendor",
-            minChunks: Infinity,
-        }),
+
         new Webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
@@ -85,25 +83,43 @@ module.exports = {
         extractPlugin,
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: 'src/index.html'
+            template: 'src/index.html',
+            chunks: [
+                'vendor'
+            ]
         }),
         new HtmlWebpackPlugin({
             filename: 'dashboard.html',
             template: 'src/dashboard.html',
+            chunks: [
+                'vendor', 'chart', 'dummygraphic'
+            ]
         }),
         new HtmlWebpackPlugin({
             filename: 'page.html',
             template: 'src/page.html',
+            chunks: [
+                'vendor'
+            ]
         }), new HtmlWebpackPlugin({
             filename: 'alert-page.html',
             template: 'src/alert-page.html',
+            chunks: [
+                'vendor'
+            ]
         }), new HtmlWebpackPlugin({
             filename: 'form-page.html',
             template: 'src/form-page.html',
+            chunks: [
+                'vendor', 'page'
+            ]
 
         }), new HtmlWebpackPlugin({
             filename: 'inbox-page.html',
             template: 'src/inbox-page.html',
+            chunks: [
+                'vendor'
+            ]
         }), new HtmlWebpackPlugin({
             filename: 'inbox-create.html',
             template: 'src/inbox-create.html',
@@ -113,20 +129,31 @@ module.exports = {
         }), new HtmlWebpackPlugin({
             filename: 'inbox-detail.html',
             template: 'src/inbox-detail.html',
+            chunks: [
+                'vendor'
+            ]
         }), new HtmlWebpackPlugin({
             filename: 'profile.html',
             template: 'src/profile.html',
+            chunks: [
+                'vendor'
+            ]
         }), new HtmlWebpackPlugin({
             filename: 'profile-settings.html',
             template: 'src/profile-settings.html',
+            chunks: [
+                'vendor', 'page'
+            ]
         }), new HtmlWebpackPlugin({
             filename: 'chat.html',
             template: 'src/chat-page.html',
+            chunks: [
+                'vendor'
+            ]
 
         }),
-        //   new CleanWebpackPlugin(['dist']),
-        // new Webpack.optimize.UglifyJsPlugin({}),
-
+        new CleanWebpackPlugin(['dist']),
+        new Webpack.optimize.UglifyJsPlugin({}),
         new CopyWebpackPlugin([
             {
                 from: 'node_modules/ckeditor',
