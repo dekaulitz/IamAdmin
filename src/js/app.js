@@ -1,24 +1,11 @@
-import 'jquery'
-import 'chart.js'
-import 'popper.js'
-import 'bootstrap'
-//import 'font-awesome/scss/font-awesome.scss';
-import '../scss/stylesheet.scss'
-import '../dashboard.html'
+// import 'tiny-date-picker/dist/tiny-date-picker.js'
+// import 'tiny-date-picker/tiny-date-picker.css'
+// import TinyDatePicker from 'tiny-date-picker';
+
+
 import {RandomGenerator} from "./random-generator";
 
-// const outputParagraph = $("#outputParagraph");
-// const outputRandomInt = () => {
-//     outputParagraph.text(RandomGenerator.randomInteger());
-// };
-// const outputRandomRange = function () {
-//     outputParagraph.text(RandomGenerator.randomRange(1, 1000));
-// };
-// const buttonRandInt = jQuery("#randomInt");
-// const buttonRandRange = document.querySelector("#randomRange");
-//
-// buttonRandInt.click(outputRandomInt);
-// buttonRandRange.addEventListener('click', outputRandomRange);
+
 var color = {
     red: 'rgb(255, 99, 132)',
     orange: 'rgb(255, 159, 64)',
@@ -60,8 +47,11 @@ var pieChartData = {
         responsive: true
     }
 };
-var pieChart = document.getElementById("pieChart").getContext("2d");
-window.myPie = new Chart(pieChart, pieChartData);
+var pieChart = document.getElementById("pieChart");
+if (pieChart != null) {
+    pieChart.getContext("2d");
+    window.myPie = new Chart(pieChart, pieChartData);
+}
 
 
 var barChartData = {
@@ -80,19 +70,24 @@ var barChartData = {
     ]
 };
 
-var ctx = document.getElementById("barChart").getContext("2d");
-window.myBar = new Chart(ctx, {
-    responsive: true,
-    type: 'bar',
-    data: barChartData,
-    options: {
+
+var ctx = document.getElementById("barChart");//.getContext("2d");
+if (ctx != null) {
+    ctx.getContext("2d");
+    console.log("berak");
+    window.myBar = new Chart(ctx, {
         responsive: true,
-        legend: {
-            position: 'top',
-        },
-        title: {
-            display: true,
-            text: 'Chart.js Bar Chart'
+        type: 'bar',
+        data: barChartData,
+        options: {
+            responsive: true,
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: 'Chart.js Bar Chart'
+            }
         }
-    }
-});
+    });
+}

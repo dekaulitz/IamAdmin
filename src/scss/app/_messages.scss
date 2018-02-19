@@ -1,0 +1,74 @@
+.mail-recepient {
+  height: 35px;
+  display: flex;
+}
+
+.mail-recepient-list-dropdown {
+  cursor: pointer;
+}
+
+.mail-recepient-list-dropdown > span {
+  border: solid 2px #dfdfdf;
+  padding: 1px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+.mail-recepient-detail {
+  margin-top: -13px;
+  padding: 5px;
+}
+
+.body-message {
+  margin-top: 10px;
+  border-top: solid 1px #dfdfdf;
+}
+
+.message-list-current {
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.content-message {
+
+}
+
+.message-box-reply {
+  border-top: #674d8f solid 2px;
+  margin-top: 20px;
+  padding: 10px;
+
+}
+
+.mail-body {
+
+}
+
+.mail-footer {
+  border-top: solid 1px #dfdfdf;
+}
+
+.mail-attachment {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.mail-attachment .card {
+  padding: 10px;
+  height: 200px;
+}
+
+.mail-attachment span {
+  font-size: 120px;
+}
+
+.mail-attachment-info {
+
+}
+
+.mail-attachment-info a {
+  color: gray;
+}
