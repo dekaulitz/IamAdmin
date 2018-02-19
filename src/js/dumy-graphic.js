@@ -15,11 +15,11 @@ let pieChartData = {
                 RandomGenerator.randomInteger(),
             ],
             backgroundColor: [
-                RandomGenerator.randomColor().red,
-                RandomGenerator.randomColor().orange,
-                RandomGenerator.randomColor().yellow,
-                RandomGenerator.randomColor().green,
-                RandomGenerator.randomColor().blue,
+                RandomGenerator.randomColor(),
+                RandomGenerator.randomColor(),
+                RandomGenerator.randomColor(),
+                RandomGenerator.randomColor(),
+                RandomGenerator.randomColor(),
             ],
             label: 'Dataset 1'
         }],
@@ -43,12 +43,12 @@ let barChartData = {
     datasets: [
         {
             label: 'Dataset 1',
-            backgroundColor: RandomGenerator.randomColor().red,
+            backgroundColor: RandomGenerator.randomColor(),
             data: [RandomGenerator.randomInteger(), RandomGenerator.randomInteger(), RandomGenerator.randomInteger(), RandomGenerator.randomInteger(), RandomGenerator.randomInteger(), RandomGenerator.randomInteger(), RandomGenerator.randomInteger()]
         },
         {
             label: 'Dataset 2',
-            backgroundColor: RandomGenerator.randomColor().blue,
+            backgroundColor: RandomGenerator.randomColor(),
             data: [RandomGenerator.randomInteger(), RandomGenerator.randomInteger(), RandomGenerator.randomInteger(), RandomGenerator.randomInteger(), RandomGenerator.randomInteger(), RandomGenerator.randomInteger(), RandomGenerator.randomInteger()]
         }
     ]

@@ -1,3 +1,62 @@
+.nav-item .dropdown > a {
+  font-weight: 500;
+}
+
+.tree-view {
+  position: relative;
+}
+
+.tree-view > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px;
+  border-radius: 0 6px 6px 6px;
+}
+
+.tree-view:hover > .dropdown-menu {
+  display: block;
+}
+
+.tree-view:hover > .dropdown-menu {
+  display: block;
+}
+
+.tree-view > a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.tree-view:hover > a:after {
+  border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+  float: none;
+}
+
+.tree-view.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  -moz-border-radius: 6px 0 6px 6px;
+  border-radius: 6px 0 6px 6px;
+}
+
+
+
+
 .main-navigation {
   background-color: #292961;
   font-weight: 500;
@@ -12,7 +71,7 @@ a.nav-link {
 
 .nav-item a.dropdown-item {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 600;
   text-align: left;
   padding: 8px 16px;
   min-width: 150px;
@@ -27,7 +86,3 @@ a.dropdown-item:active {
   background-color: #eee;
 }
 
-.app-name {
-  font-size: 13px;
-  font-weight: 600;
-}

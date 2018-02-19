@@ -55,7 +55,7 @@ module.exports = {
                 use: [{
                     loader: 'html-loader',
                     options: {
-                        minimize: true
+                        minimize: false
                     }
                 }],
 
@@ -78,7 +78,6 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery',
             Popper: 'pooper.js',
-            chartjs: 'chart.js'
         }),
         extractPlugin,
         new HtmlWebpackPlugin({

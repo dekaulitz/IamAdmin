@@ -1,7 +1,9 @@
+/*
+content
+ */
 .content-box {
   border: none !important;
 }
-
 .content-box > .card-header {
 
   border-bottom: #674d8f solid 2px;
@@ -27,8 +29,4 @@
 
 .content-box-body .error {
   color: red !important;
-}
-
-.form-group > label {
-  font-weight: 500;
 }

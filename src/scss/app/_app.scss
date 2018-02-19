@@ -3,11 +3,12 @@
 @import "breadcrumb";
 @import "login";
 @import "menu";
-@import "notification";
+
 @import "footer";
 @import "content";
 @import "messages";
-
+@import "form";
+@import "notification";
 html {
   font-size: 13px;
   -webkit-tap-highlight-color: transparent;
@@ -19,6 +20,11 @@ html {
 body {
   background-color: whitesmoke;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.app-name {
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .border {
@@ -35,19 +41,6 @@ body {
 
 .card {
   border-top: #674d8f solid 2px;
-}
-
-.datepicker-dropdown {
-  border: solid 1px #e2e2e2;
-}
-
-.form-group > input[type='checkbox'] {
-  padding-left: 1.25rem;
-}
-
-button.toolbox {
-  padding: 0px;
-  background-color: transparent;
 }
 
 .btn {
@@ -108,26 +101,8 @@ button.toolbox {
   margin-bottom: 10px;
 }
 
-.check-with-select {
-  border: solid 1px #dee2e6;
-  border-radius: 5px;
-  height: auto;
-
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
 .table-cursor {
   cursor: pointer;
-}
-
-.check-with-select > select {
-  border: none;
-}
-
-.check-with-select > select:focus {
-  border: none;
-  box-shadow: none;
 }
 
 .no-padding {

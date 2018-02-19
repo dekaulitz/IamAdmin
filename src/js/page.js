@@ -1,5 +1,3 @@
-require('./common');
-import '../scss/stylesheet.scss'
 import moment from 'moment';
 
 let editor = $(".text-editor");

@@ -1,0 +1,102 @@
+/*
+form css
+ */
+
+.input-default {
+  border-left: #337ab7 solid;
+}
+
+.input-error {
+  border-left: red solid;
+
+  border-color: red;
+}
+
+.input-error::placeholder {
+  color: red !important;
+}
+
+.form-control-checkbox {
+  margin: 10px;
+}
+
+.form-group > input[type='checkbox'] {
+  padding-left: 1.25rem;
+}
+
+.form-group-inline {
+  display: flex;
+}
+
+.form-group-inline > .form-control {
+  height: calc(2.5rem + 2px) !important;
+  border-radius: 0px;
+}
+
+.form-group-inline > .form-control:focus {
+  border-color: transparent !important;
+  box-shadow: none;
+}
+
+.form-group-inline > .form-control {
+  height: calc(2.5rem + 2px) !important;
+  border-radius: 0px;
+}
+
+.form-group-inline > .addon {
+  padding: 10px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.form-group-inline > .addon-form {
+  border: none;
+  white-space: nowrap;
+
+}
+
+.datepicker-dropdown {
+  border: solid 1px #e2e2e2;
+}
+
+.check-with-select {
+  border: solid 1px #dee2e6;
+  border-radius: 5px;
+  height: auto;
+
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.check-with-select > select {
+  border: none;
+}
+
+.check-with-select > select:focus {
+  border: none;
+  box-shadow: none;
+}
+
+button.toolbox {
+  padding: 0px;
+  background-color: transparent;
+}
+
+/*
+upload form
+ */
+.btn-form-upload {
+  position: relative;
+
+}
+
+.btn-form-upload > input {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+  padding: 0.375rem 0.75rem;
+  left: 0px;
+  border: solid;
+  width: 100%;
+}
