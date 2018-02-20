@@ -1,3 +1,8 @@
+/*
+import bootstrap datepicker js and moment js
+ */
+
+import 'bootstrap-datepicker';
 import moment from 'moment';
 
 let editor = $(".text-editor");
