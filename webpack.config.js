@@ -9,16 +9,19 @@ const extractPlugin = new ExtractTextPlugin({
     filename: './css/stylesheet.css',
 });
 
+
 module.exports = {
     entry: {
-        vendor: './src/js/common.js',
-        chart: './src/js/vendor.chart.js',
+        vendor: './src/js/vendor.js',
+        graphic: './src/js/graphic.js',
         dummygraphic: './src/js/dumy-graphic.js',
         page: './src/js/page.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: "js/[name].bundle.js"
+        filename: "js/[name].bundle.js",
+        libraryTarget: 'var',
+        library: '[name]'
     },
     module: {
         rules: [
@@ -72,6 +75,7 @@ module.exports = {
             },
         ]
     },
+
     plugins: [
 
         new Webpack.ProvidePlugin({
@@ -91,7 +95,7 @@ module.exports = {
             filename: 'dashboard.html',
             template: 'src/dashboard.html',
             chunks: [
-                'vendor', 'chart', 'dummygraphic'
+                'graphic', 'dummygraphic', 'vendor',
             ]
         }),
         new HtmlWebpackPlugin({
@@ -145,19 +149,26 @@ module.exports = {
             ]
         }), new HtmlWebpackPlugin({
             filename: 'chat.html',
-            template: 'src/chat-page.html',
+            template: './src/chat-page.html',
             chunks: [
                 'vendor'
             ]
 
         }),
         // new CleanWebpackPlugin(['dist']),
-        new Webpack.optimize.UglifyJsPlugin({}),
+        // new Webpack.optimize.UglifyJsPlugin({}),
         new CopyWebpackPlugin([
             {
                 from: 'node_modules/ckeditor',
                 to: 'js/ckeditor',
                 toType: 'dir'
+            }
+        ]),
+        new CopyWebpackPlugin([
+            {
+                from: 'src/static/dummy.js',
+                to: 'js/dummy.js',
+                toType: 'file'
             }
         ])
     ],
