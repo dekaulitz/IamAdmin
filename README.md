@@ -5,13 +5,13 @@ with awesome library like jquery,bootstrap and chart.js.
 You can easly to build something awosome with this template with less config.
 
 
+
 How to use
 ---------
  if you want to build an angular,vue or react app you can add the config with this webpack config.
 
  <code>npm install</code> for install the dependencies.
  <code>npm run build</code> for running webpack dev server and <code>npm run build:prod</code> for production mode.
-
 
 
  How to use library
@@ -25,8 +25,7 @@ How to use
 <code>var bootstrapDatePicker = page.bootstrapDatePicker;</code> if you want to use bootstrap-date-picker js from page.js<br/>
 <code>var chart = graphic.chart;</code> if you want to use chart js from graphic.js<br/>
 
-
-var random= graphic.RandomGenerator;
+=======
 Credits
 -------
 This component build from awsome third parties. Thanks a lot for you all of you whos build and contribute
