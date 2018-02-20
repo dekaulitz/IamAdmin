@@ -151,7 +151,7 @@ module.exports = {
             ]
 
         }),
-        new CleanWebpackPlugin(['dist']),
+        // new CleanWebpackPlugin(['dist']),
         new Webpack.optimize.UglifyJsPlugin({}),
         new CopyWebpackPlugin([
             {
