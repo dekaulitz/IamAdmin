@@ -14,7 +14,6 @@ module.exports = {
     entry: {
         vendor: './src/js/vendor.js',
         graphic: './src/js/graphic.js',
-        dummygraphic: './src/js/dumy-graphic.js',
         page: './src/js/page.js',
     },
     output: {
