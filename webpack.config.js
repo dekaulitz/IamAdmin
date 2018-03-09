@@ -123,6 +123,12 @@ module.exports = {
                 'vendor'
             ]
         }), new HtmlWebpackPlugin({
+            filename: 'recovery-password.html',
+            template: 'src/recovery-password.html',
+            chunks: [
+                'vendor'
+            ]
+        }), new HtmlWebpackPlugin({
             filename: 'inbox-create.html',
             template: 'src/inbox-create.html',
             chunks: [
